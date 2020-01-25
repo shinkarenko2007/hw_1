@@ -5,8 +5,8 @@ from pyrob.api import *
 
 @task
 def task_3_1():
-    move_right(8)
-    wall_is_on_the_right(1)
+    while not wall_is_on_the_right():
+          move_right()
     pass
 
 
